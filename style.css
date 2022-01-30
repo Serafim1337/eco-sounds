@@ -59,7 +59,7 @@ body {
   justify-content: space-between;
   max-width: 1440px;
   flex-grow: 1;
-  flex-wrap: wrap;
+  flex-flow: wrap-reverse;
   gap: 30px;
 }
 
@@ -116,25 +116,25 @@ filter: invert(100%) sepia(94%) saturate(16%) hue-rotate(288deg) brightness(104%
     0 7.8px 17.9px rgba(0, 0, 0, 0.059), 0 14.6px 33.4px rgba(0, 0, 0, 0.059),
     0 35px 80px rgba(0, 0, 0, 0.07);
   cursor: pointer;
-  height: 100px;
+  height: 50px;
   position: absolute;
-  width: 100px;
+  width: 50px;
 }
 
 .play-button:active .circle {
   background: #000;
 }
 .icon {
-  height: 200px;
+  height: 100px;
   transform: rotate(-120deg);
   transition: transform 500ms;
-  width: 200px;
+  width: 100px;
 }
 .part  {
   background: white;
-  height: 200px;
+  height: 100px;
   position: absolute;
-  width: 200px;
+  width: 100px;
 }
 .left {
   clip-path: polygon(
