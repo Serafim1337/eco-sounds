@@ -1,3 +1,4 @@
+/*!--------------------- general  */
 body {
   margin: 0;
   background-color: rgba(111, 192, 128, 0.5);
@@ -9,50 +10,65 @@ body {
   align-items: center;
 }
 
-.logo{
+/*!--------------------- logo  */
+
+.logo {
   position: absolute;
   left: 0;
   margin: 30px;
   z-index: 100;
   width: 100px;
   transition: ease 0.5s;
-  align-self:flex-start;
+  align-self: flex-start;
 }
 
 .logo:hover {
   cursor: pointer;
-  transform: scale(130%)
+  transform: scale(130%);
 }
 
+/*!--------------------------------------backgrounds  */
+
 .background {
- width: 100%;
- height: 100vh;
- animation: showImg 1s linear forwards;
+  width: 100%;
+  height: 100vh;
+  animation: showImg 1s linear forwards;
+}
+
+@keyframes showImg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .bg-forest {
-  background: url('assets/img/1.jpg') center no-repeat;
+  background: url("assets/img/1.jpg") center no-repeat;
 }
 
 .bg-drozd {
-  background: url('assets/img/2.jpg') center no-repeat;
+  background: url("assets/img/2.jpg") center no-repeat;
 }
 
 .bg-javoronok {
-  background: url('assets/img/3.jpg') center no-repeat;
+  background: url("assets/img/3.jpg") center no-repeat;
 }
 
 .bg-slavka {
-  background: url('assets/img/4.jpg') center no-repeat;
+  background: url("assets/img/4.jpg") center no-repeat;
 }
 
 .bg-solovey {
-  background: url('assets/img/5.jpg') center no-repeat;
+  background: url("assets/img/5.jpg") center no-repeat;
 }
 
 .bg-zaryanka {
-  background: url('assets/img/6.jpg') center no-repeat;
+  background: url("assets/img/6.jpg") center no-repeat;
 }
+
+/*!---------------------------birds images  */
 
 .container {
   display: flex;
@@ -79,23 +95,18 @@ body {
 
 .active {
   transform: translateY(-10px);
-  filter: invert(100%) sepia(94%) saturate(16%) hue-rotate(288deg) brightness(104%) contrast(100%);
+  filter: invert(100%) sepia(94%) saturate(16%) hue-rotate(288deg)
+    brightness(104%) contrast(100%);
 }
 
 .bird-images:hover {
   cursor: pointer;
   transform: translateY(-10px);
-  filter: invert(100%) sepia(94%) saturate(16%) hue-rotate(288deg) brightness(104%) contrast(100%);
+  filter: invert(100%) sepia(94%) saturate(16%) hue-rotate(288deg)
+    brightness(104%) contrast(100%);
 }
 
-@keyframes showImg {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+/*!----------------------------- footer  */
 
 .footer {
   display: flex;
@@ -109,15 +120,17 @@ body {
 }
 
 .footer p {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #ffffff;
   font-size: 30px;
 }
 
 /*!-----------------------------  play button*/
+
 .play-button {
   position: absolute;
   z-index: 100;
+  margin-left: 15px;
 }
 
 .button {
