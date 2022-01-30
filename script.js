@@ -1,6 +1,7 @@
 const images = document.querySelectorAll('.bird-images')
 images.forEach((image) => {
   image.addEventListener('click', imagesHandler);
+  image.addEventListener('click', imageActivityHandler);
 })
 
 const logo = document.querySelector('.logo');
@@ -8,6 +9,15 @@ logo.addEventListener('click', imagesHandler);
 
 function imagesHandler (event) {
 changeBg(event);
+}
+
+function imageActivityHandler(event) {
+  event.target.classList.add('active');
+  images.forEach((image) => {
+    if(image !== event.target) {
+      image.classList.remove('active');
+    }
+  })
 }
 
 function changeBg (event) {
